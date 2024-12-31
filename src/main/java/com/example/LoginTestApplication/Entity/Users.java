@@ -1,39 +1,13 @@
 package com.example.LoginTestApplication.Entity;
 
-
 import javax.persistence.*;
 
 @Entity
-@Table(name="Users")
+@Table(name="users")
 public class Users {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-    @Column(name="username")
+    @Column(name="username",nullable = false)
     private String username;
-
-    @Column(name="password")
-    private String password;
-
-    @Column(name="role")
-    private Role role;
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getUsername() {
         return username;
@@ -50,4 +24,18 @@ public class Users {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    @Column(name="password",nullable = false)
+    private String password;
+
+    @Column(name="enabled", nullable = false)
+    private boolean enabled;
 }
