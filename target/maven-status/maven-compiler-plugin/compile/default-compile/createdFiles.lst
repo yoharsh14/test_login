@@ -1,1 +1,8 @@
+com\example\LoginTestApplication\Entity\UserEntity.class
+com\example\LoginTestApplication\Repository\RoleRepository.class
+com\example\LoginTestApplication\Repository\UserRepository.class
+com\example\LoginTestApplication\Configuration\SecurityConfig.class
+com\example\LoginTestApplication\Entity\RoleEntity.class
+com\example\LoginTestApplication\Service\CustomUserService.class
+com\example\LoginTestApplication\Controller\GreetingsController.class
 com\example\LoginTestApplication\LoginTestApplication.class
